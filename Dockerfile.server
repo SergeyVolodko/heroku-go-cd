@@ -1,1 +1,2 @@
 FROM gocd/gocd-server:v21.4.0
+EXPOSE 8153
