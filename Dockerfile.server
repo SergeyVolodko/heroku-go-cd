@@ -1,5 +1,3 @@
 FROM gocd/gocd-server:v21.4.0
 
 COPY wrapper-properties.conf /usr/share/go-server/wrapper-config/wrapper-properties.conf
-
-ENTRYPOINT ["/docker-entrypoint.sh"]
