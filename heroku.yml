@@ -1,4 +1,6 @@
 build:
    docker:
       go_server: Dockerfile.server
-      proxy: Dockerfile.proxy
+      #proxy: Dockerfile.proxy
+run:
+   go_server: docker run -d -p8000:8153
