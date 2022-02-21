@@ -3,8 +3,8 @@ build:
       go_server: Dockerfile.server
       #proxy: Dockerfile.proxy
 release:
-  command:
-    - ./docker-entrypoint.sh
+   command:
+      - ./docker-entrypoint.sh
    image: go_server
 # run:
 #    go_server: ./docker-entrypoint.sh
