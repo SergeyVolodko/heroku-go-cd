@@ -1,3 +1,4 @@
 build:
    docker:
       go_server: Dockerfile.server
+      proxy: Dockerfile.proxy
