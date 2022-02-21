@@ -1,5 +1,3 @@
 build:
    docker:
       go_server: Dockerfile.server
-run:
-   go_server: run -d -p8153:8153
