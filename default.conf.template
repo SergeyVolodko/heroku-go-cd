@@ -1,7 +1,16 @@
 server {
   listen $PORT default_server;
 
+  server_name _;
+  root /var/www/html;
+
+  charset UTF-8;
+
+  error_page 404 /backend-not-found.html;
+  location = /backend-not-found.html {
+    allow all;
+  }
   location / {
-    proxy_pass http://127.0.0.1:8153/;
+    return 404;
   }
 }
