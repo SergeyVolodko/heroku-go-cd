@@ -5,7 +5,7 @@ build:
 release:
    command:
       - nginx -g 'daemon off;'
-   go_proxy: go_server
+   image: go_proxy
 #    command:
 #       - ./docker-entrypoint.sh
 #    image: go_server
