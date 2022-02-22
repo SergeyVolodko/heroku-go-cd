@@ -1,8 +1,11 @@
 build:
    docker:
       # go_server: Dockerfile.server
-      proxy: Dockerfile.proxy
-# release:
+      go_proxy: Dockerfile.proxy
+release:
+   command:
+      - nginx -g 'daemon off;'
+   go_proxy: go_server
 #    command:
 #       - ./docker-entrypoint.sh
 #    image: go_server
