@@ -10,4 +10,6 @@ release:
 #       - ./docker-entrypoint.sh
 #    image: go_server
 run:
-   go_server: nginx -g 'daemon off;'
+   command:
+      - nginx -g 'daemon off;'
+   image: go_proxy
