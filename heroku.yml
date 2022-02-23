@@ -11,5 +11,6 @@ release:
 #    image: go_server
 run:
    go_proxy: 
-      command: nginx -g 'daemon off;'
+      command:
+         - nginx -g 'daemon off;'
       image: go_proxy
